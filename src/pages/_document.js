@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <title>MovieHunt</title>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/images/faviconMH.ico" sizes="any"/>
       </Head>
       <body>
         <Main />
