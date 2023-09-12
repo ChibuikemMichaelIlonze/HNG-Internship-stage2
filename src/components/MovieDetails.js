@@ -28,15 +28,8 @@ const MovieDetails = () => {
     );
   }
 
-  const {
-    title,
-    release_date,
-    runtime,
-    overview,
-    poster_path, 
-  } = movieDetails;
+  const { title, release_date, runtime, overview, poster_path } = movieDetails;
 
-  
   const backgroundImageStyle = {
     backgroundImage: `url(https://image.tmdb.org/t/p/original${poster_path})`,
     backgroundSize: "cover",
@@ -52,14 +45,14 @@ const MovieDetails = () => {
         <h1 data-testid="movie-title" className="text-6xl">
           {title}
         </h1>
-        <p data-testid="movie-release-date" className="text-md">
-          Release Date: {release_date}
+        <p data-testid="movie-overview" className="text-md text-zinc-200">
+          {overview}
         </p>
         <p data-testid="movie-runtime" className="text-md">
-          Runtime: {runtime} minutes
+          Runtime: <span className="font-bold text-zinc-200">{runtime} minutes</span>
         </p>
-        <p data-testid="movie-overview" className="text-md">
-          {overview}
+        <p data-testid="movie-release-date" className="text-md">
+          Release Date: <span className="font-bold text-zinc-200">{release_date}</span>
         </p>
       </div>
     </div>
