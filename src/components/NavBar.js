@@ -57,18 +57,15 @@ const NavBar = ({ setMovies, mode, setMode }) => {
           className={`h-10 pl-4 pr-10 block border-2 rounded-lg focus:outline-none ${
             mode
               ? "text-white bg-zinc-900 border-zinc-500"
-              : "text-black bg-zinc-300 border-zinc-700 placeholder-text-zinc-700"
+              : "text-black bg-zinc-300 border-zinc-700 placeholder:text-zinc-500"
           }`}
         />
         <button
           type="submit"
           className="absolute inset-y-0 right-0 px-3 py-2 flex items-center rounded-r-lg focus:outline-none"
         >
-          <img
-            src="/Images/Search.svg"
-            alt=""
-            className="w-5 h-5 hover:w-7 hover:h-7 duration-200"
-          />
+        <BsSearch  className={`w-5 h-5 hover:w-7 hover:h-7 duration-200 ${mode?"fill-white":"fill-zinc-700"}`}/>
+        
         </button>
       </form>
     </div>
