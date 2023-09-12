@@ -43,8 +43,8 @@ const NavBar = ({ setMovies, mode, setMode }) => {
           <div className="h-full w-0 bg-green-500 duration-300 ease-in-out"></div>
         </div>
       )}
-      <div className="flex flex-1 justify-between gap-5">
-        <h1 className="text-xl font-bold">MovieHunt</h1>
+      <div className="flex flex-1 justify-between gap-5 items-center">
+        <h1 className="text-3xl font-bold">MovieHunt</h1>
         <BsHeart className={`h-7 w-7 cursor-pointer ${mode?"fill-zinc-500":"fill-white"}`} onClick={handleMode} />
       </div>
       <form onSubmit={searchMovie} className="relative">
