@@ -9,8 +9,9 @@ export default function Home() {
 
  
   return (
-    <main className={`bg-zinc-900 ${inter.className}`}>
+    <main className={` ${inter.className}`}>
       <Hero mode={mode} setMode={setMode} />
+      
     </main>
   );
 }

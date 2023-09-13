@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import {
-  BsArrow90DegLeft,
-  BsArrowLeft,
-  BsArrowLeftCircle,
+ 
   BsArrowLeftShort,
-  BsBack,
-  BsBackspace,
+ 
 } from "react-icons/bs";
 import Link from "next/link";
 
@@ -50,7 +47,7 @@ const MovieDetails = () => {
       className="w-full h-screen absolute top-0 left-0"
       style={backgroundImageStyle}
     >
-      <Link href="/home">
+      <Link href="/">
         {" "}
         <BsArrowLeftShort className="absolute top-[40%]  -left-5 sm:left-0 z-50 w-24 h-24 animate-pulse fill-white " />
       </Link>
