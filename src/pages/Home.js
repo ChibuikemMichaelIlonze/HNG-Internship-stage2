@@ -25,12 +25,12 @@ const Hero = ({ mode, setMode }) => {
 
   return (
     <div
-      className={`min-h-screen px-2 sm:px-10 md:px-16 lg:px-28 flex flex-col items-center ${
-        mode ? "bg-zinc-900 text-white" : "bg-zinc-200 text-black"
+      className={` relative min-h-screen px-2 sm:px-10 md:px-16 lg:px-28 flex flex-col items-center ${
+        mode ? "bg-zinc-900 text-white duration-700 ease-linear" : "bg-zinc-200 text-black duration-700 ease-linear"
       }`}
     >
       <NavBar setMovies={setMovies} mode={mode} setMode={setMode} />
-      <h1 className="mt-52 md:mt-28 mb-10 text-2xl font-bold">Top Rated Movies</h1>
+      <h1 className="mt-40 md:mt-28 mb-10 text-2xl font-bold">Top Rated Movies</h1>
       <div className="flex-1">
         {loading ? (
           <p>Loading...</p>

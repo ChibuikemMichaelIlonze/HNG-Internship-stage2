@@ -20,8 +20,8 @@ const MovieBox = ({ mode, id, title, poster_path, release_date }) => {
     <Link href={`/movies/${id}`}>
       <div
         data-testid="movie-card"
-        className={`w-36 sm:w-44 md:w-52 lg:w-60 p-2 pb-4 mb-14 ${
-          mode ? "bg-white text-black" : "bg-zinc-700 text-white"
+        className={`h-[18rem] sm:h-[20rem] md:h-[22.5rem] lg:h-[24rem] w-36 sm:w-44 md:w-52 lg:w-60 p-2  flex flex-col  mb-14 gap-2 ${
+          mode ? "bg-white text-black duration-300 ease-in-out" : "bg-zinc-700 text-white duration-300 ease-in-out"
         }`}
       >
         {isLoading ? (
@@ -33,18 +33,21 @@ const MovieBox = ({ mode, id, title, poster_path, release_date }) => {
             <img
               data-testid="movie-poster"
               src={API_IMG + poster_path}
-              alt=""
-              className="object-cover"
+              alt={title}
+              className="object-cover h-[14rem] sm:h-[16.5rem] md:h-[18.5rem] lg:h-[20rem]"
             />
-            <h1
-              data-testid="movie-title"
-              className="text-sm font-bold text-left my-3"
-            >
-              {title}
-            </h1>
-            <p data-testid="movie-release-date" className="text-sm text-left">
-              Released on: {release_date}
-            </p>
+            <div className="flex flex-col  flex-1 ">
+              <h1
+                data-testid="movie-title"
+                className="text-sm font-bold text-left text-ellipsis whitespace-nowrap w-full overflow-hidden"
+              >
+                {title}
+              </h1>
+
+              <p data-testid="movie-release-date" className="text-sm text-left">
+                <span className="inline-block opacity-80">{release_date}</span>
+              </p>
+            </div>
           </>
         )}
       </div>

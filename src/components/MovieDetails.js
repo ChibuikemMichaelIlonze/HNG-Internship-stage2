@@ -41,7 +41,7 @@ const MovieDetails = () => {
       className="w-full h-screen absolute top-0 left-0"
       style={backgroundImageStyle}
     >
-      <div className="w-full h-screen bg-black bg-opacity-90 flex flex-col items-center justify-start py-20 px-20 sm:px-32 md:px-40 lg:px-56 text-center gap-5 text-zinc-400">
+      <div className="w-full h-screen bg-black bg-opacity-80 flex flex-col items-center justify-start py-20 px-20 sm:px-32 md:px-40 lg:px-56 text-center gap-5 text-zinc-400">
         <h1 data-testid="movie-title" className="text-6xl">
           {title}
         </h1>
