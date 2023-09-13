@@ -42,7 +42,7 @@ const NavBar = ({ setMovies, mode, setMode }) => {
         <div className="fixedOne fixed top-0 left-0 h-1 z-50 bg-white"></div>
       )}
       <div className="flex flex-1 justify-between gap-12  items-center">
-        <Link href="/home">
+        <Link href="/">
           <h1 className="text-3xl font-bold">MovieHunt</h1>
         </Link>
         {mode ? (
