@@ -44,9 +44,7 @@ const NavBar = ({ setMovies, mode, setMode }) => {
       }`}
     >
       {isLoading && (
-        <div className="fixed top-0 left-0 w-full h-1 bg-blue-700 z-50">
-          <div className="h-full w-0 bg-green-500 duration-300 ease-in-out"></div>
-        </div>
+       <div className="fixedOne fixed top-0 left-0 h-1 z-50 bg-white"></div>
       )}
       <div className="flex flex-1 justify-between gap-5 items-center">
         <h1 className="text-3xl font-bold">MovieHunt</h1>

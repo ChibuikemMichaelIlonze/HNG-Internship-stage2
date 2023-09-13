@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes expandWidth {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.fixedOne {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0; /* Start with 0 width */
+    height: 3px;
+    background-color:;
+    z-index: 50;
+    animation: expandWidth 2s linear forwards; /* 'forwards' keeps the final state */
+}
