@@ -13,7 +13,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="flex gap-10 flex-col sm:flex-row">
+      <div className="flex gap-2 md:gap-10 flex-col sm:flex-row">
         <p>Conditions of Use</p>
         <p>Privacy & Policy</p>
         <p>Press Room</p>

@@ -12,12 +12,6 @@
 }
 
 .fixedOne {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0; /* Start with 0 width */
-    height: 3px;
-    background-color:;
-    z-index: 50;
-    animation: expandWidth 2s linear forwards; /* 'forwards' keeps the final state */
+
+    animation: expandWidth 1s linear forwards; /* 'forwards' keeps the final state */
 }

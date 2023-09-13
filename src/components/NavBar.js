@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import {
   BsHeart,
   BsMoon,
@@ -39,15 +40,17 @@ const NavBar = ({ setMovies, mode, setMode }) => {
 
   return (
     <div
-      className={`fixed w-full h-30 md:h-10 px-2 sm:px-10 md:px-16 lg:px-28 py-3 md:py-8 flex flex-col md:flex-row justify-between items-center md:gap-5 gap-2 ${
+      className={`fixed w-full h-30 md:h-10 px-2 sm:px-10 md:px-16 lg:px-28 py-4 md:py-8 flex flex-col md:flex-row justify-between items-center md:gap-5 gap-2 ${
         mode ? "bg-zinc-950 text-white" : "bg-zinc-800 text-white"
       }`}
     >
       {isLoading && (
-       <div className="fixedOne fixed top-0 left-0 h-1 z-50 bg-white"></div>
+        <div className="fixedOne fixed top-0 left-0 h-1 z-50 bg-white"></div>
       )}
-      <div className="flex flex-1 justify-between gap-5 items-center">
-        <h1 className="text-3xl font-bold">MovieHunt</h1>
+      <div className="flex flex-1 justify-between gap-12  items-center">
+        <Link href="/home">
+          <h1 className="text-3xl font-bold">MovieHunt</h1>
+        </Link>
         {mode ? (
           <BsSunFill
             className={`h-7 w-7 cursor-pointer hover:animate-pulse  origin-center 
@@ -72,7 +75,7 @@ const NavBar = ({ setMovies, mode, setMode }) => {
           onChange={changeHandler}
           type="text"
           placeholder="What do you want to view?"
-          className={`h-10 pl-4 pr-10 block border-2 rounded-lg focus:outline-none ${
+          className={`h-10  pl-4 pr-10 block border-2 rounded-lg focus:outline-none ${
             mode
               ? "text-white bg-zinc-900 border-zinc-500 duration-700 ease-linear"
               : "text-black bg-zinc-300 border-zinc-700 placeholder:text-zinc-500 duration-700 ease-linear"
