@@ -46,8 +46,12 @@ const MovieBox = ({ mode, id, title, poster_path, release_date }) => {
               >
                 {title}
               </h1>
-              <p data-testid="movie-release-date" className="text-sm text-left">
-                <span className="inline-block opacity-80">{release_date}</span>
+
+              <p
+                data-testid="movie-release-date"
+                className="text-sm text-left inline-block opacity-80"
+              >
+                {release_date}
               </p>
             </div>
           </>

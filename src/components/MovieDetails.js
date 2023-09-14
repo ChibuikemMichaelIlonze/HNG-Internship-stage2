@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import {
- 
-  BsArrowLeftShort,
- 
-} from "react-icons/bs";
+import { BsArrowLeftShort } from "react-icons/bs";
 import Link from "next/link";
 
 const API_KEY = "8fd9104bfdd163dd0406d6f990f34d57";
@@ -56,16 +52,30 @@ const MovieDetails = () => {
         <h1 data-testid="movie-title" className="text-5xl ">
           {title}
         </h1>
-        <p data-testid="movie-overview" className="text-lg text-zinc-400 sm:text-xl  ">
+        <p
+          data-testid="movie-overview"
+          className="text-lg text-zinc-400 sm:text-xl  "
+        >
           {overview}
         </p>
-        <p data-testid="movie-runtime" className="text-lg sm:text-xl ">
+        <p className="text-lg sm:text-xl ">
           Runtime:{" "}
-          <span className="font-bold text-zinc-200 ">{runtime} minutes</span>
+          <span
+            data-testid="movie-runtime"
+            className="font-bold text-zinc-200 "
+          >
+            {runtime}
+          </span>{" "}
+          minutes
         </p>
-        <p data-testid="movie-release-date" className="text-lg sm:text-xl ">
+        <p className="text-lg sm:text-xl ">
           Release Date:{" "}
-          <span className="font-bold text-zinc-200">{release_date}</span>
+          <span
+            data-testid="movie-release-date"
+            className="font-bold text-zinc-200"
+          >
+            {release_date}
+          </span>
         </p>
       </div>
     </div>
