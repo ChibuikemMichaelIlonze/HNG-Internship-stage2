@@ -22,7 +22,7 @@ Clone the repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/your-username/movie-discovery-app.git
+git clone https://github.com/ChibuikemMichaelIlonze/HNG-Internship-stage2
 Navigate to the project directory:
 
 bash
